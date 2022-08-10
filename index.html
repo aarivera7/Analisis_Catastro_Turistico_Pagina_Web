@@ -2,16 +2,23 @@
 <html lang="es">
 	<head>
   	<meta charset="utf-8" />
+		<link rel="shortcut icon" href="https://www.utpl.edu.ec/sites/all/themes/utpl/favicon.ico" type="image/vnd.microsoft.icon" />
   	<meta name="viewport" content="width=device-width, initial-scale=1" />
   	<meta name="description" content="Proyecto Integrador de Programación Avanzada y Bases de Datos Avanzada, de cuarto ciclo de la Carrera de Ciencias de la Computación UTPL" />
   	<link rel="stylesheet" type="text/css" href="./css/style.css" />
   	<title>Proyecto Integrador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet" />
 	</head>
+
   <body>
   	<header>
   	  <nav>
   	  	<figure>
-  	  		<img src="https://www.utpl.edu.ec/sites/all/themes/utpl/logo.png" id="logo" />
+					<a href="https://utpl.edu.ec/">
+  	  			<img src="https://www.utpl.edu.ec/sites/all/themes/utpl/logo.png" id="logo" />
+					</a>
   	  	</figure>
   	  	<h1>Proyecto Integrador de Saberes</h1>
   	  	<ul class = "main-nav">
@@ -35,21 +42,45 @@
   			</p>
     	</section>
 
-    	<section>
-    		<h3>Fuentes Usadas:</h3>
-    		<figure>
-    			<img src="https://farm66.staticflickr.com/65535/buddyicons/186101857@N03_r.jpg?1580332494#186101857@N03" />
-    			<img src="http://ambar.utpl.edu.ec/base/images/logo_ambar_250.png" />
+    	<section class="credit">
+    		<h3 class="credit-title">Fuentes Usadas:</h3>
+    		<figure class="credit-figure">
+          <a href="https://www.turismo.gob.ec/">
+            <img src="https://farm66.staticflickr.com/65535/buddyicons/186101857@N03_r.jpg?1580332494#186101857@N03" id="min" alt="ministerio de turísmo" />
+          </a>
+
+					<a href="http://www.inec.gob.ec/">
+            <img src="http://www.ecuadorencifras.gob.ec/wp-content/uploads/banner%20-INEC.png" id="inec" alt="INEC" />
+          </a>
+
+    			<a href="http://ambar.utpl.edu.ec/">
+            <img src="http://ambar.utpl.edu.ec/base/images/logo_ambar_250.png" id="ambar" alt="UTPL Ambar" />
+          </a>
     		</figure>
-    		<h3>Herramientas Usadas:</h3>
-    		<img src="https://www.gitpod.io/images/media-kit/logo-light-theme.png">
+
+    		<h3 class="credit-title">Herramientas Usadas:</h3>
+        <figure class="credit-figure">
+          <a href="https://www.gitpod.io/">
+            <img src="https://www.gitpod.io/svg/media-kit/logo-light-theme.svg" id="gitpod" alt="gitpod" />
+          </a>
+
+          <a href="https://spark.apache.org/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" id="spark" alt="spark" />
+          </a>
+
+          <a href="https://zeppelin.apache.org/">
+            <img src="https://zeppelin.apache.org/assets/themes/zeppelin/img/zeppelin_svg_logo.svg" id="zeppelin" alt="zeppelin" />
+            <span class="zeppelin-title">Apache Zeppelin</span>
+          </a>
+        </figure>
     	</section>
 
+      <a name="queries"></a>
+
   	  <section class="queries">
-  	  	<a name="queries"></a>
   		  <article class="query1 query">
   				<h2 class="query__title">¿Qué cantidad de establecimientos hay por provincia y sector turístico?</h2>
-  				<iframe src="https://8080-jorgaf-zeppelinpaavanza-wc2q298nfl0.ws-us59.gitpod.io/#/notebook/2H7YN6ZZ7/paragraph/paragraph_1658955755130_1195279232?asIframe" class="query1-grafic query-grafic"></iframe>
+  				<iframe src="https://8080-jorgaf-zeppelinpaavanza-wc2q298nfl0.ws-us60.gitpod.io/#/notebook/2H7YN6ZZ7/paragraph/paragraph_1658955755130_1195279232?asIframe" class="query1-grafic query-grafic"></iframe>
   				<p class="query__text">
   					Estos datos son muy útiles para empezar desde un principio, ya que estas nos dan una idea de que sectores turísticos existen más establecimientos, y en cuales no. Tambien esta nos da una perpectiva de como estan distribuidos los diferentes sectores en las 24 provincias del Ecuador.
   				</p>
@@ -57,49 +88,118 @@
 
   		  <article class="query2 query">
   				<h2 class="query__title">¿Qué cantidad de restaurantes hay por provincia y categoría?</h2>
-  				<iframe src="https://8080-jorgaf-zeppelinpaavanza-wc2q298nfl0.ws-us59.gitpod.io/#/notebook/2H7YN6ZZ7/paragraph/paragraph_1658957617614_1626809931?asIframe" class="query2-grafic query-grafic"></iframe>
+  				<iframe src="https://8080-jorgaf-zeppelinpaavanza-wc2q298nfl0.ws-us60.gitpod.io/#/notebook/2H7YN6ZZ7/paragraph/paragraph_1658957617614_1626809931?asIframe" class="query2-grafic query-grafic"></iframe>
   				<p class="query__text">
-  					
+  					En esta grafica nos adentramos en el sector de alimentos y bebidas, en el cual se centra en la diferentes categorías que puede tener un restaurante y cual es la cantidad que hay de cada uno de estos. Como se puede ver en al grafica las categorías más bajas son las que mas predominan en el mercado, mientras que a medida que se va subiendo la categoría, estas van disminuyendo considerablemente. Pero también se ve que en la provincia más grandes y por ende donde existe mas poder alquisitivo, las categorías más exclusivas son más abundantes.
   				</p>
   		  </article>
 
   		  <article class="query3 query">
   				<h2 class="query__title">¿Qué cantidad de hoteles hay por provincia y categoría?</h2>
-  				<iframe src="https://8080-jorgaf-zeppelinpaavanza-wc2q298nfl0.ws-us59.gitpod.io/#/notebook/2H7YN6ZZ7/paragraph/paragraph_1658957926222_979833897?asIframe" class="query3-grafic query-grafic"></iframe>
+  				<iframe src="https://8080-jorgaf-zeppelinpaavanza-wc2q298nfl0.ws-us60.gitpod.io/#/notebook/2H7YN6ZZ7/paragraph/paragraph_1658957926222_979833897?asIframe" class="query3-grafic query-grafic"></iframe>
   				<p class="query__text">
-  					
+  					En esta grafica nos adentramos en el sector de hospedaje, en el cual se centra en la diferentes categorías que puede tener un hotel y cual es la cantidad que hay de cada uno de estos. Como se puede ver en al grafica, a diferencia de los restaurantes, las categorías medias son las que mas predominan en el mercado, mientras que las categorías con menor y mayor puntuación, son las que menos establecimientos tiene. Pero también se ve que en la provincia más grandes o con mayores lugares turísticos, las categorías más exclusivas son más abundantes.
   				</p>
   		  </article>
 
   		  <article class="query4 query">
   				<h2 class="query__title">¿Qué cantidad de hosterías hay por provincia y categoría?</h2>
-  				<iframe src="https://8080-jorgaf-zeppelinpaavanza-wc2q298nfl0.ws-us59.gitpod.io/#/notebook/2H7YN6ZZ7/paragraph/paragraph_1658958362898_984058488?asIframe" class="query4-grafic query-grafic"></iframe>
+  				<iframe src="https://8080-jorgaf-zeppelinpaavanza-wc2q298nfl0.ws-us60.gitpod.io/#/notebook/2H7YN6ZZ7/paragraph/paragraph_1658958362898_984058488?asIframe" class="query4-grafic query-grafic"></iframe>
   				<p class="query__text">
-  					
+  					En esta grafica nos adentramos en el sector de hospedaje, en el cual se centra en la diferentes categorías que puede tener un hostería y cual es la cantidad que hay de cada uno de estos. Como se puede ver en al grafica, a diferencia de los restaurantes, las categorías medias son las que mas predominan en el mercado, mientras que las categorías con menor y mayor puntuación, son las que menos establecimientos tiene. Pero también se ve que en la provincia más grandes o con mayores lugares turísticos, las categorías más exclusivas son más abundantes.
   				</p>
   		  </article>
 
   		  <article class="query5 query">
   				<h2 class="query__title">¿Cuál es el número de alojamientos por cantón que se tiene por terminal terrestre?</h2>
-  				<iframe src="https://8080-jorgaf-zeppelinpaavanza-wc2q298nfl0.ws-us59.gitpod.io/#/notebook/2H7YN6ZZ7/paragraph/paragraph_1659031547597_1825720031?asIframe" class="query5-grafic query-grafic"></iframe>
+  				<iframe src="https://8080-jorgaf-zeppelinpaavanza-wc2q298nfl0.ws-us60.gitpod.io/#/notebook/2H7YN6ZZ7/paragraph/paragraph_1659031547597_1825720031?asIframe" class="query5-grafic query-grafic"></iframe>
   				<p class="query__text">
-  					
+  					Con este grafico se puede observar el número de alojamientos que existe en cada canton que posea un terminal terrestre, con el cual se puede deducir que terminales terrestre pueden tener más trafico de pasajeros y como este puede influir en la economía local, especialmente en el sector turístico.
   				</p>
   		  </article>
 
   		  <article class="query6 query">
   				<h2 class="query__title">¿Cuál es el número de tipos de alojamientos por cantón que se tiene por aeropuerto?</h2>
-  				<iframe src="https://8080-jorgaf-zeppelinpaavanza-wc2q298nfl0.ws-us59.gitpod.io/#/notebook/2H7YN6ZZ7/paragraph/paragraph_1659033464969_1679785718?asIframe" class="query6-grafic query-grafic"></iframe>
+  				<iframe src="https://8080-jorgaf-zeppelinpaavanza-wc2q298nfl0.ws-us60.gitpod.io/#/notebook/2H7YN6ZZ7/paragraph/paragraph_1659033464969_1679785718?asIframe" class="query6-grafic query-grafic"></iframe>
   				<p class="query__text">
-  					
+  					Con este grafico se puede observar el número de alojamientos que existe en cada canton que posea un aeropuerto, con el cual se puede deducir que aeropuertos pueden tener más trafico de pasajeros y como este puede influir en la economía local, especialmente en el sector turístico.
+  				</p>
+  		  </article>
+
+		  	<article class="query7 query">
+  				<h2 class="query__title">Mapas de los aeropuertos y terminales terrestres del Ecuador</h2>
+					<div class="query-maps">
+						<div>
+							<iframe src="https://8080-jorgaf-zeppelinpaavanza-wc2q298nfl0.ws-us60.gitpod.io/#/notebook/2H7YN6ZZ7/paragraph/paragraph_1658983416310_1301069448?asIframe" class="query1-map query-map"></iframe>
+						</div>
+
+  					<div>
+							<iframe src="https://8080-jorgaf-zeppelinpaavanza-wc2q298nfl0.ws-us60.gitpod.io/#/notebook/2H7YN6ZZ7/paragraph/paragraph_1658983304645_1490319405?asIframe" class="query2-map query-map"></iframe>
+						</div>
+					</div>
+  				<p class="query__text">
+  					En estos mapas se puede observar la ubicación de los aeropuerto y terminales terrestres que existen en el territorio Ecuatoriano.
   				</p>
   		  </article>
   	  </section>
     </main>
 
     <footer>
-    <a name="info"></a>
-  		
+      <a name="info"></a>
+  		<div class="wrapper">
+        <div class="owid-row">
+          <div class="owid-col owid-col--lg-1">
+            <h5>Proyecto Integrador 2022 - Cuarto Ciclo</h5>
+            <h5>Docente de Base de Datos y Docente Integrador:</h5>
+            <h6>Mgtr. Ángel Eduardo Encalada Encalada</h6>
+            <ul>
+              <li><a href="https://investigacion.utpl.edu.ec/aeencalada">Perfil Personal</a></li>
+              <li><a href="https://github.com/aeencalada">Perfil GitHub</a></li>
+            </ul>
+
+            <h5>Docente de Programación Avanzada:</h5>
+            <h6>Mgtr. Jorge Afranio López Vargas</h6>
+            <ul>
+              <li><a href="https://investigacion.utpl.edu.ec/es/jalopez2">Perfil Personal</a></li>
+              <li><a href="https://github.com/jorgaf">Perfil GitHub</a></li>
+            </ul>
+
+            <figure >
+							<a href="https://utpl.edu.ec/">
+              	<img src="https://www.utpl.edu.ec/sites/default/files/Recurso%201%403x.png" id="logo2" />
+							</a>
+            </figure>
+            <figcaption><a href="https://utpl.edu.ec/"><h4>Universidad Tecnica Particular de Loja</h4></a></figcaption>
+          </div>
+
+          <div class="owid-col owid-col--lg-1">
+            <!--
+            <figure>
+              <a class="Header-link "
+                href="https://github.com/"
+                data-hotkey="g d"
+                aria-label="Homepage "
+                data-turbo="false"
+                data-analytics-event="{&quot;category&quot;:&quot;Header&quot;,&quot;action&quot;:&quot;go to dashboard&quot;,&quot;label&quot;:&quot;icon:logo&quot;}"
+              >
+                <svg height="128" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="128" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+                  <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+              </a>
+            </figure>
+            <figcaption>Link del repositorio</figcaption>
+            -->
+
+            <h5>Integrantes: </h5>
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

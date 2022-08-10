@@ -15,21 +15,29 @@ html {
 }
 
 body {
-	
+	background-color: #fefefe;
 }
 
 header{
 	position: fixed;
 	background-color: var(--primary-color);
-	width: 100vw;
+	width: auto;
+	right: 0rem;
+	left: 0rem;
 	height: 7rem;
-	border-bottom: 0.5rem solid #d42b21;
+	border-bottom: 0.4rem solid #d42b21;
 }
 
 #logo {
 	width: 12rem;
 	display: inline-block;
 	margin: 1rem 4rem;
+}
+
+#logo2 {
+	width: 16rem;
+	display: inline-block;
+	margin-top: 3rem;
 }
 
 h1 {
@@ -40,7 +48,7 @@ h1 {
 	display: inline-block;
 	position: absolute;
 	top: 0.3rem;
-	left: 20rem;
+	left: 18rem;
 }
 
 
@@ -51,12 +59,12 @@ h1 {
 	padding-left: 0;
 	position: absolute;
 	top: 0.1rem;
-	right: 3rem;
+	right: 4rem;
 }
 
 .main-nav__item {
 	display: inline-block;
-	font-size: 1.7rem;
+	font-size: 1.8rem;
 }
 
 .main-nav__item a {
@@ -79,21 +87,21 @@ h1 {
 
 main {
 	width: auto;
-	height: 100vh;
-	padding: 6rem 0;
 }
 
 .presentation{
 	font-size: 1.8rem;
 	text-align: justify;
-	background: url(https://ourworldindata.org/images/WorldMapDark2.png) 10% 0 #002147;
-	padding: 4rem 5rem;
+	background: url(https://ourworldindata.org/images/WorldMapDark2.png) 5% 0 #002147;
+	padding: 8rem;
+	padding-top: 12rem;
 	color: white;
 }
 
 .presentation__h2 {
 	color: var(--secundary-color);
 	margin: 2rem;
+	font-family: Playfair Display,Georgia,Times New Roman,serif;
 }
 
 .presentation__content  {
@@ -101,33 +109,186 @@ main {
 	margin: 1rem 4rem;
 }
 
-.queries{
+.credit {
+	margin: 5rem;
+}
+
+.credit-title{
+	font-size: 2.4rem;
+	text-align: center;
+	margin-top: 4rem;
+	margin-bottom: 1rem;
+	color: var(--primary-color);
+}
+
+.credit-figure {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#min{
+	width: 	11rem;
+}
+
+#inec{
+	width: 28rem;
+}
+
+#ambar{
+	width: 28rem;
+}
+
+#gitpod{
+	height: 8rem;
+}
+
+#spark{
+	width: 20rem;
+}
+
+#zeppelin{
+	height: 8rem;
+}
+
+.queries h2{
+	font-family: Playfair Display,Georgia,Times New Roman,serif;
 }
 .query{
-	padding: 4rem 5rem;
+	padding: 4rem 10rem;
 	background-color: transparent;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
+.query p {
+	text-align: justify;
+	margin-top: 2rem;
+}
+
 .query__title{
 	font-size:3rem;
+	margin-bottom: 3rem;
 }
 
 .query-grafic {
-	width: 50vw;
+	width: 55vw;
 	height: 50vh;
+	margin-left: 6rem;
 	border: 0;
-	border-radius: 10px;
+	border-radius: 5rem;
 }
 
 .query__text {
-	font-size: 1.8rem;
-	margin: 1rem 1rem;
+	font-size: 1.6rem;
+	margin: 1rem 6rem;
+	font-weight: 400;
 }
 
-.query1, .query3, .query5 {
+.query1, .query3, .query5, .query7 {
 	background-color: #ebeef2;
+}
+
+.query2, .query4, .query6 {
+	background-color: #fafafa;
+}
+
+.query-maps{
+	display: flex;
+	justify-content: space-around;
+}
+
+.query-map{
+	width: 42vw;
+	height: 55vh;
+	border: 0;
+	border-radius: 5rem;
+}
+
+footer{
+	width: auto;
+	height: 40rem;
+	background-color: var(--primary-color);
+	position: relative;
+	right: 0rem;
+	left: 0rem;
+	bottom: 0rem;
+}
+
+.zeppelin-title {
+    font-size: 2.4rem;
+    text-shadow: 1px 1px #4a4a4a;
+    font-family: 'Patua One', cursive;
+    line-height: 1.5;
+	color: #3071a9;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+    color:white;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.site-footer .wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.site-footer .wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.owid-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1rem;
+}
+
+.owid-col--lg-1{
+    flex: 1;
+	margin: 1rem 6rem;
+}
+
+.owid-col--lg-1 h4{
+	color: var(--white-gray);
+    font-size: 2rem;
+	margin-top: 1rem;
+}
+
+.owid-col--lg-1 h5{
+	color: var(--white-gray);
+    font-size: 1.8rem;
+	margin-top: 2rem;
+}
+
+.owid-col--lg-1 h6{
+	color: var(--white-gray);
+    font-size: 1.5rem;
+}
+
+.owid-col--lg-1 a{
+	color: var(--white-gray);
+    font-size: 1.4rem;
+	text-decoration: none;
+	margin: 2rem;
+}
+
+.owid-col--lg-1 a:hover{
+	color: white;
+}
+
+.owid-col--lg-1 a:active{
+	color: white;
+}
+
+.owid-col--lg-1 ul{
+	list-style:none;
 }
 
